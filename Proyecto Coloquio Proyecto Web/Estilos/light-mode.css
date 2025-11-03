@@ -314,4 +314,57 @@ tbody tr:hover {
     
     /* Reemplaza box-shadow: 0 8px 15px rgba(255, 123, 0, 0.6); */
     box-shadow: 0 8px 15px rgba(0, 86, 179, 0.2); /* Sombra suave azul */
+}/* Definición de Variables de Botón (Añadir al inicio de styles.css) */
+:root {
+    /* Modo Noche (Valores por defecto) */
+    --toggle-bg: #ff7b00;        /* Fondo: Naranja */
+    --toggle-text: white;
+    --toggle-shadow: rgba(255, 123, 0, 0.6);
+    --toggle-hover-bg: #e66900;
+}
+
+/* ------------------------------------- */
+/* ESTILOS BASE DEL BOTÓN DE CAMBIO DE TEMA */
+/* ------------------------------------- */
+
+#theme-toggle {
+    /* Posicionamiento y Display (Ajustar según donde lo quieras) */
+    position: fixed; /* Lo fija en la pantalla */
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    
+    /* Estilos Visuales */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px; /* Coherente con tus tarjetas */
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    
+    /* Aplicación de Variables */
+    background-color: var(--toggle-bg);
+    color: var(--toggle-text);
+    
+    /* Sombras y Transiciones */
+    box-shadow: 0 4px 10px var(--toggle-shadow);
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+
+#theme-toggle:hover {
+    background-color: var(--toggle-hover-bg);
+    transform: translateY(-2px); /* Pequeño efecto 3D al pasar el ratón */
+}
+
+/* ------------------------------------- */
+/* ANULACIÓN DEL BOTÓN PARA EL MODO DÍA */
+/* ------------------------------------- */
+
+/* Nota: Esto anula los valores por defecto definidos en :root */
+:root {
+    /* Reemplazamos Naranja por Azul */
+    --toggle-bg: #0056b3;        /* Fondo: Azul de Acento */
+    --toggle-text: white;
+    --toggle-shadow: rgba(0, 86, 179, 0.4);
+    --toggle-hover-bg: #004494;
 }
