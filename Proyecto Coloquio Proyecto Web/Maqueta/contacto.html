@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="../Estilos/style.css">
   <link rel="stylesheet" href="../Estilos/hero.css">
   <link rel="stylesheet" href="../Estilos/nav.css">
+  <link rel="shortcut icon" href="/Proyecto Coloquio Proyecto Web/Imagenes/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -19,6 +20,9 @@
     <div class="logo">
       <img src="../Imagenes/logoturingpro.png" alt="Logo Turing Hardware">
     </div>
+    <div>
+            <button id="theme-toggle"> Cambiar a modo dia </button>
+        </div>
   </header>
   <nav>
     <ul>
@@ -39,7 +43,7 @@
   <main class="contacto">
     <section class="formulario-container">
       <h2>Envíanos un Mensaje</h2>
-      <form action="#" method="post" class="formulario">
+      <form action="#" method="post" class="formulario" id="contacto-form">
         <div class="campo">
           <label for="nombre">Nombre</label>
           <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
@@ -88,6 +92,21 @@
     <p>&copy; 2025 Turing Hardware | Todos los derechos reservados</p>
   </footer>
 
+  <div id="success-modal" class="modal">
+    <div class="modal-content">
+        <svg class="modal-icon" viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+        </svg>
+        
+        <h3 class="modal-title">¡Mensaje Enviado con Éxito!</h3>
+        <p class="modal-message">Gracias por tu contacto. Hemos recibido tu mensaje y pronto nos comunicaremos contigo. Serás redirigido a la página principal.</p>
+        
+        <button id="modal-redirect-btn" class="btn-enviar">Aceptar y Continuar</button>
+    </div>
+</div>
+
+<script src="/Proyecto Coloquio Proyecto Web/Scripts/night_mode.js" defer></script>
+<script src="/Proyecto Coloquio Proyecto Web/Scripts/contacto.js" defer></script>
 </body>
 
 

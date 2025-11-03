@@ -1,3 +1,38 @@
+/* Definición de Variables de Botón (Añadir al inicio de styles.css) */
+:root {
+    --toggle-bg: #0056b3;        
+    --toggle-text: white;
+    --toggle-shadow: rgba(0, 86, 179, 0.4);
+    --toggle-hover-bg: #004494;
+}
+
+/* ESTILOS BASE DEL BOTÓN DE CAMBIO DE TEMA */
+#theme-toggle {
+    /* **ESTOS ESTILOS SON CRUCIALES Y DEBEN ESTAR AQUÍ** */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; 
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
+
+    /* Aplicación de Variables */
+    background-color: var(--toggle-bg);
+    color: var(--toggle-text);
+    box-shadow: 0 4px 10px var(--toggle-shadow);
+}
+
+#theme-toggle:hover {
+    background-color: var(--toggle-hover-bg);
+    transform: translateY(-2px);
+}
+
+
 *{ 
     margin: 0;
     padding: 0;
