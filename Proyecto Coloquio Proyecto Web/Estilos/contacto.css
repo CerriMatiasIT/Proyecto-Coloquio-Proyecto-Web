@@ -115,3 +115,42 @@
 .info-contacto i {
   color: #ff7b00;
 }
+
+/* --- ESTILOS DEL MODAL (Modo Noche y Estructura) --- */
+
+.modal {
+    display: none; /* Crucial: Oculto por defecto */
+    position: fixed;
+    z-index: 2000; /* Debe ser alto */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Overlay oscuro */
+}
+
+.modal-content {
+    background-color: #1e1e1e; /* Fondo de la tarjeta (Noche) */
+    margin: 15% auto; /* Centrado */
+    padding: 30px;
+    border: 1px solid #ff7b00; 
+    max-width: 400px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(255, 123, 0, 0.3); /* Sombra de acento (Noche) */
+}
+
+.modal-title {
+    color: #ff7b00; /* Color del texto (Noche) */
+}
+
+.modal-message {
+    color: #e0e0e0; /* Color del texto (Noche) */
+}
+
+.modal-icon {
+    fill: #ff7b00; /* Color del icono SVG (Noche) */
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}

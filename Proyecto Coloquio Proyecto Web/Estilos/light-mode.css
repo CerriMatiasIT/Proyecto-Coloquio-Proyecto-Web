@@ -356,15 +356,21 @@ tbody tr:hover {
     transform: translateY(-2px); /* Pequeño efecto 3D al pasar el ratón */
 }
 
-/* ------------------------------------- */
-/* ANULACIÓN DEL BOTÓN PARA EL MODO DÍA */
-/* ------------------------------------- */
+/* --- ANULACIÓN DEL MODAL PARA EL MODO DÍA (En light-mode.css) --- */
 
-/* Nota: Esto anula los valores por defecto definidos en :root */
-:root {
-    /* Reemplazamos Naranja por Azul */
-    --toggle-bg: #0056b3;        /* Fondo: Azul de Acento */
-    --toggle-text: white;
-    --toggle-shadow: rgba(0, 86, 179, 0.4);
-    --toggle-hover-bg: #004494;
+.modal-content {
+    background-color: #ffffff; 
+    border: 1px solid #0056b3; 
+    box-shadow: 0 5px 20px rgba(0, 86, 179, 0.2); 
+}
+
+.modal-title,
+.modal-icon {
+    color: #0056b3; 
+    fill: #0056b3; 
+}
+
+/* ESTA REGLA ES CLAVE: Cambia el texto gris claro a oscuro */
+.modal-message {
+    color: #333333; 
 }

@@ -1,10 +1,9 @@
 /* Definición de Variables de Botón (Añadir al inicio de styles.css) */
 :root {
-    /* Modo Noche (Valores por defecto) */
-    --toggle-bg: #ff7b00;
+    --toggle-bg: #0056b3;        
     --toggle-text: white;
-    --toggle-shadow: rgba(255, 123, 0, 0.6);
-    --toggle-hover-bg: #e66900;
+    --toggle-shadow: rgba(0, 86, 179, 0.4);
+    --toggle-hover-bg: #004494;
 }
 
 /* ESTILOS BASE DEL BOTÓN DE CAMBIO DE TEMA */
